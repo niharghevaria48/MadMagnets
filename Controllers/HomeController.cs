@@ -28,6 +28,12 @@ namespace MadMagnets.Controllers
             return View();
         }
 
+        //Added Iactionresult for data
+        public IActionResult Data()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

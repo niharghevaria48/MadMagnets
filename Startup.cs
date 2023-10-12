@@ -1,6 +1,8 @@
+using MadMagnets.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,7 +25,13 @@ namespace MadMagnets
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(); 
+
+            //Connection string passed to the context by calling method
+            services.AddDbContext<MadMagnetsContext>(options =>
+     options.UseSqlServer(Configuration.GetConnectionString("MadMagnetsContext")));
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +58,8 @@ namespace MadMagnets
             {
                 endpoints.MapControllerRoute(
                     name: "default",
+
+                    //It is recalling format for routing set
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
