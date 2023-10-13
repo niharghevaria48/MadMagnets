@@ -28,6 +28,11 @@ namespace MadMagnets.Controllers
             return View();
         }
 
+        public IActionResult Aboutus()
+        {
+            return View();
+        }
+
         //Added Iactionresult for data
         public IActionResult Data()
         {

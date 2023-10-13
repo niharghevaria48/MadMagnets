@@ -34,5 +34,9 @@ namespace MadMagnets.Models
         [DataType(DataType.Date)]
         public DateTime DiscoveryDate { get; set; }
 
+
+        [Range(1, 5)]
+        public decimal Rating { get; set; }
+
     }
 }

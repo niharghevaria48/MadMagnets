@@ -1,12 +1,22 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+@font-face {
+    font-family: 'crimson_textregular';
+    src: url('/fonts/crimsontext-regular-webfont.woff') format('woff2'), url('/fonts/crimsontext-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
     
 }
+
+
+
 
 /* Provide sufficient contrast against white background */
 a {
@@ -38,6 +48,7 @@ html {
 }
 
 
+
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
@@ -64,8 +75,9 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    color:white;
+    color: white;
     background: linear-gradient(to right, blue, red);
+    font-family: 'crimson_textregular', sans-serif;
 }
 .footer {
   position: absolute;

@@ -78,7 +78,7 @@ namespace MadMagnets.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Type,Material,Use,Strength,DiscoveryDate")] Magnet magnet)
+        public async Task<IActionResult> Create([Bind("Id,Type,Material,Use,Strength,DiscoveryDate,Rating")] Magnet magnet)
         {
             if (ModelState.IsValid)
             {
@@ -113,7 +113,7 @@ namespace MadMagnets.Controllers
         //The following code shows the HTTP POST Edit method, which processes the posted Magnets values
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Type,Material,Use,Strength,DiscoveryDate")] Magnet magnet)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Type,Material,Use,Strength,DiscoveryDate,Rating")] Magnet magnet)
         {
             if (id != magnet.Id)
             {

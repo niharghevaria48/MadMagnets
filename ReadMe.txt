@@ -137,3 +137,37 @@ Starting designing the app
 downloaded couple of pictures from the Internet
 
 
+--------------------------------------------------------------
+Date 12/10/2023  Time: 19:00
+
+Added background color and img to main page
+
+
+--------------------------------------------------------------
+Date 12/10/2023  Time: 19:30
+
+Added view and name it as about us page
+added view page in layout file
+
+
+--------------------------------------------------------------
+Date 12/10/2023  Time: 19:45
+
+Added styling to all pages
+
+--------------------------------------------------------------
+Date 12/10/2023  Time: 20:00
+
+
+Added images to two pages and styled it
+added font in style.css file
+
+change the color of footer
+
+--------------------------------------------------------------
+Date 12/10/2023  Time: 20:30
+
+added datetime.now in layout file 
+
+
+
